@@ -1,0 +1,342 @@
+[2022-08-09 14:43:30:278][main] INFO  z.d.DividendServiceApplication - Starting DividendServiceApplication using Java 11.0.15 on JunYongui-MacBookPro-2.local with PID 10089 (/Users/junyongpark/Desktop/intellij project/DividendService/build/classes/java/main started by junyongpark in /Users/junyongpark/Desktop/intellij project/DividendService)
+[2022-08-09 14:43:30:279][main] INFO  z.d.DividendServiceApplication - No active profile set, falling back to 1 default profile: "default"
+[2022-08-09 14:43:30:590][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+[2022-08-09 14:43:30:591][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-09 14:43:30:620][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+[2022-08-09 14:43:30:626][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+[2022-08-09 14:43:30:627][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2022-08-09 14:43:30:633][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.CompanyRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:43:30:634][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.DividendRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:43:30:634][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:43:30:634][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[2022-08-09 14:43:31:864][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-09 14:43:31:868][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-09 14:43:31:868][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-09 14:43:31:868][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-08-09 14:43:31:910][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-09 14:43:31:910][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 610 ms
+[2022-08-09 14:43:31:927][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-09 14:43:31:985][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-09 14:43:31:991][main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-08-09 14:43:31:1056][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-09 14:43:31:1075][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+[2022-08-09 14:43:31:1133][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-08-09 14:43:31:1168][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-09 14:43:31:1399][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-09 14:43:31:1402][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-09 14:43:32:1797][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7bb3294c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f391e52, org.springframework.security.web.context.SecurityContextPersistenceFilter@37f7ce20, org.springframework.security.web.header.HeaderWriterFilter@628aea61, org.springframework.security.web.authentication.logout.LogoutFilter@45ac973, zerobase.dividendservice.security.JwtAuthenticationFilter@a5d23c9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@477e5b69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7da6d695, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5857d723, org.springframework.security.web.session.SessionManagementFilter@7e58b0f6, org.springframework.security.web.access.ExceptionTranslationFilter@167bae0b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67aaf882]
+[2022-08-09 14:43:32:1802][main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/h2-console/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2022-08-09 14:43:32:1802][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/h2-console/**']
+[2022-08-09 14:43:32:2088][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-09 14:43:32:2100][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-09 14:43:32:2107][main] INFO  z.d.DividendServiceApplication - Started DividendServiceApplication in 2.028 seconds (JVM running for 2.338)
+[2022-08-09 14:44:27:56757][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-09 14:44:27:56758][SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[2022-08-09 14:44:27:56828][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-09 14:44:27:56830][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-09 14:44:28:235][main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@a1217f9 - Failed to instantiate converter class [ch.qos.logback.classic.pattern.ThreadConverter] as a composite converter for keyword [thread] ch.qos.logback.core.util.IncompatibleClassException
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@a1217f9 - Failed to create converter for [%thread] keyword
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at zerobase.dividendservice.DividendServiceApplication.main(DividendServiceApplication.java:20)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@a1217f9 - Failed to instantiate converter class [ch.qos.logback.classic.pattern.ThreadConverter] as a composite converter for keyword [thread] ch.qos.logback.core.util.IncompatibleClassException
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@a1217f9 - Failed to create converter for [%thread] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+[2022-08-09 14:45:59:245][main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.PatternLayout("null") - Empty or null pattern.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at zerobase.dividendservice.DividendServiceApplication.main(DividendServiceApplication.java:20)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.PatternLayout("null") - Empty or null pattern.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+[2022-08-09 14:46:40:244][main] INFO  z.d.DividendServiceApplication - Starting DividendServiceApplication using Java 11.0.15 on JunYongui-MacBookPro-2.local with PID 10128 (/Users/junyongpark/Desktop/intellij project/DividendService/build/classes/java/main started by junyongpark in /Users/junyongpark/Desktop/intellij project/DividendService)
+[2022-08-09 14:46:40:245][main] INFO  z.d.DividendServiceApplication - No active profile set, falling back to 1 default profile: "default"
+[2022-08-09 14:46:40:534][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+[2022-08-09 14:46:40:535][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-09 14:46:40:563][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+[2022-08-09 14:46:40:568][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+[2022-08-09 14:46:40:569][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2022-08-09 14:46:40:575][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.CompanyRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:46:40:576][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.DividendRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:46:40:576][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:46:40:576][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[2022-08-09 14:46:41:810][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-09 14:46:41:814][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-09 14:46:41:814][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-09 14:46:41:814][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-08-09 14:46:41:853][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-09 14:46:41:853][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 589 ms
+[2022-08-09 14:46:41:870][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-09 14:46:41:924][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-09 14:46:41:930][main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-08-09 14:46:41:1000][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-09 14:46:41:1019][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+[2022-08-09 14:46:41:1074][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-08-09 14:46:41:1105][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-09 14:46:41:1329][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-09 14:46:41:1332][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-09 14:46:42:1717][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@b666366, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@362fd4e9, org.springframework.security.web.context.SecurityContextPersistenceFilter@5bed0ff4, org.springframework.security.web.header.HeaderWriterFilter@477e5b69, org.springframework.security.web.authentication.logout.LogoutFilter@9a16af1, zerobase.dividendservice.security.JwtAuthenticationFilter@59c38af5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e4dddee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@183a84f4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bbe852a, org.springframework.security.web.session.SessionManagementFilter@7e764e5c, org.springframework.security.web.access.ExceptionTranslationFilter@367fbb28, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@84e43fb]
+[2022-08-09 14:46:42:1721][main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/h2-console/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2022-08-09 14:46:42:1721][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/h2-console/**']
+[2022-08-09 14:46:42:1991][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-09 14:46:42:2011][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-09 14:46:42:2018][main] INFO  z.d.DividendServiceApplication - Started DividendServiceApplication in 1.958 seconds (JVM running for 2.203)
+[2022-08-09 14:47:14:33987][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-09 14:47:14:33988][SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[2022-08-09 14:47:14:34068][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-09 14:47:14:34071][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-09 14:47:15:251][main] INFO  z.d.DividendServiceApplication - Starting DividendServiceApplication using Java 11.0.15 on JunYongui-MacBookPro-2.local with PID 10132 (/Users/junyongpark/Desktop/intellij project/DividendService/build/classes/java/main started by junyongpark in /Users/junyongpark/Desktop/intellij project/DividendService)
+[2022-08-09 14:47:15:252][main] INFO  z.d.DividendServiceApplication - No active profile set, falling back to 1 default profile: "default"
+[2022-08-09 14:47:15:513][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+[2022-08-09 14:47:15:513][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-09 14:47:15:538][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+[2022-08-09 14:47:15:544][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+[2022-08-09 14:47:15:544][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2022-08-09 14:47:15:550][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.CompanyRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:47:15:550][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.DividendRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:47:15:551][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:47:15:551][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[2022-08-09 14:47:16:780][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-09 14:47:16:784][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-09 14:47:16:784][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-09 14:47:16:784][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-08-09 14:47:16:823][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-09 14:47:16:823][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 554 ms
+[2022-08-09 14:47:16:839][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-09 14:47:16:884][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-09 14:47:16:889][main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-08-09 14:47:16:950][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-09 14:47:16:964][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+[2022-08-09 14:47:16:1017][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-08-09 14:47:16:1046][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-09 14:47:16:1229][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-09 14:47:16:1232][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-09 14:47:16:1619][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5857d723, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b518645, org.springframework.security.web.context.SecurityContextPersistenceFilter@16b2d182, org.springframework.security.web.header.HeaderWriterFilter@7054c068, org.springframework.security.web.authentication.logout.LogoutFilter@3b95fce9, zerobase.dividendservice.security.JwtAuthenticationFilter@5a9baba8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50841932, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68fa8ea5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@294a3f2a, org.springframework.security.web.session.SessionManagementFilter@1e5e2e06, org.springframework.security.web.access.ExceptionTranslationFilter@6920fa35, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@294bb6ae]
+[2022-08-09 14:47:16:1623][main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/h2-console/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2022-08-09 14:47:16:1623][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/h2-console/**']
+[2022-08-09 14:47:17:1900][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-09 14:47:17:1913][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-09 14:47:17:1920][main] INFO  z.d.DividendServiceApplication - Started DividendServiceApplication in 1.856 seconds (JVM running for 2.108)
+[2022-08-09 14:47:40:25300][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-09 14:47:40:25301][SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[2022-08-09 14:47:40:25379][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-09 14:47:40:25382][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-09 14:47:41:251][main] INFO  z.d.DividendServiceApplication - Starting DividendServiceApplication using Java 11.0.15 on JunYongui-MacBookPro-2.local with PID 10136 (/Users/junyongpark/Desktop/intellij project/DividendService/build/classes/java/main started by junyongpark in /Users/junyongpark/Desktop/intellij project/DividendService)
+[2022-08-09 14:47:41:252][main] INFO  z.d.DividendServiceApplication - No active profile set, falling back to 1 default profile: "default"
+[2022-08-09 14:47:42:513][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+[2022-08-09 14:47:42:513][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-09 14:47:42:541][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+[2022-08-09 14:47:42:547][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+[2022-08-09 14:47:42:547][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2022-08-09 14:47:42:552][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.CompanyRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:47:42:553][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.DividendRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:47:42:553][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:47:42:553][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[2022-08-09 14:47:42:779][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-09 14:47:42:783][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-09 14:47:42:783][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-09 14:47:42:783][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-08-09 14:47:42:824][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-09 14:47:42:824][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 554 ms
+[2022-08-09 14:47:42:840][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-09 14:47:42:885][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-09 14:47:42:889][main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-08-09 14:47:42:946][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-09 14:47:42:959][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+[2022-08-09 14:47:42:1008][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-08-09 14:47:42:1044][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-09 14:47:42:1240][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-09 14:47:42:1242][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-09 14:47:43:1634][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66576bd2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51bc649e, org.springframework.security.web.context.SecurityContextPersistenceFilter@24d73c51, org.springframework.security.web.header.HeaderWriterFilter@92de794, org.springframework.security.web.authentication.logout.LogoutFilter@36ce0bc2, zerobase.dividendservice.security.JwtAuthenticationFilter@5a9baba8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f26cd76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78805df3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f09ff10, org.springframework.security.web.session.SessionManagementFilter@19d0d1ab, org.springframework.security.web.access.ExceptionTranslationFilter@68c47cf9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14580edc]
+[2022-08-09 14:47:43:1636][main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/h2-console/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2022-08-09 14:47:43:1636][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/h2-console/**']
+[2022-08-09 14:47:43:1930][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-09 14:47:43:1941][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-09 14:47:43:1949][main] INFO  z.d.DividendServiceApplication - Started DividendServiceApplication in 1.888 seconds (JVM running for 2.128)
+[2022-08-09 14:49:02:80810][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-09 14:49:02:80810][SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[2022-08-09 14:49:02:80889][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-09 14:49:02:80892][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-09 14:49:03:329][main] INFO  z.d.DividendServiceApplication - Starting DividendServiceApplication using Java 11.0.15 on JunYongui-MacBookPro-2.local with PID 10153 (/Users/junyongpark/Desktop/intellij project/DividendService/build/classes/java/main started by junyongpark in /Users/junyongpark/Desktop/intellij project/DividendService)
+[2022-08-09 14:49:03:330][main] INFO  z.d.DividendServiceApplication - No active profile set, falling back to 1 default profile: "default"
+[2022-08-09 14:49:04:635][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+[2022-08-09 14:49:04:635][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-09 14:49:04:665][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+[2022-08-09 14:49:04:671][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+[2022-08-09 14:49:04:671][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2022-08-09 14:49:04:677][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.CompanyRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:49:04:678][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.DividendRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:49:04:678][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:49:04:678][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+[2022-08-09 14:49:04:931][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-09 14:49:04:935][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-09 14:49:04:935][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-09 14:49:04:935][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-08-09 14:49:04:975][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-09 14:49:04:975][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 626 ms
+[2022-08-09 14:49:04:992][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-09 14:49:04:1044][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-09 14:49:04:1050][main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-08-09 14:49:04:1111][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-09 14:49:04:1125][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+[2022-08-09 14:49:04:1177][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-08-09 14:49:04:1206][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-09 14:49:04:1401][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-09 14:49:04:1404][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-09 14:49:05:1798][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23e297d9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e8e02a3, org.springframework.security.web.context.SecurityContextPersistenceFilter@19d0d1ab, org.springframework.security.web.header.HeaderWriterFilter@2b9bbaa8, org.springframework.security.web.authentication.logout.LogoutFilter@5c04ec8, zerobase.dividendservice.security.JwtAuthenticationFilter@7204d98f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5114c8a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24d73c51, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a74c940, org.springframework.security.web.session.SessionManagementFilter@4e553d60, org.springframework.security.web.access.ExceptionTranslationFilter@5bed0ff4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3113595e]
+[2022-08-09 14:49:05:1801][main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/h2-console/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2022-08-09 14:49:05:1801][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/h2-console/**']
+[2022-08-09 14:49:05:2080][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-09 14:49:05:2093][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-09 14:49:05:2100][main] INFO  z.d.DividendServiceApplication - Started DividendServiceApplication in 2.028 seconds (JVM running for 2.29)
+[2022-08-09 14:49:35:31802][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-09 14:49:35:31802][SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[2022-08-09 14:49:35:31876][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-09 14:49:35:31879][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-09 14:49:36:234][main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@a77614d - There is no conversion class registered for conversion word [s]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@a77614d - [s] is not a valid conversion word
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at zerobase.dividendservice.DividendServiceApplication.main(DividendServiceApplication.java:20)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@a77614d - There is no conversion class registered for conversion word [s]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@a77614d - [s] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+[2022-08-09 14:50:01:222][main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@a77614d - There is no conversion class registered for conversion word [N]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@a77614d - [N] is not a valid conversion word
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at zerobase.dividendservice.DividendServiceApplication.main(DividendServiceApplication.java:20)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@a77614d - There is no conversion class registered for conversion word [N]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@a77614d - [N] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+[2022-08-09 14:50:06:242][main] INFO  z.d.DividendServiceApplication - Starting DividendServiceApplication using Java 11.0.15 on JunYongui-MacBookPro-2.local with PID 10170 (/Users/junyongpark/Desktop/intellij project/DividendService/build/classes/java/main started by junyongpark in /Users/junyongpark/Desktop/intellij project/DividendService)
+[2022-08-09 14:50:06:243][main] INFO  z.d.DividendServiceApplication - No active profile set, falling back to 1 default profile: "default"
+[2022-08-09 14:50:06:510][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+[2022-08-09 14:50:06:511][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-09 14:50:06:538][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+[2022-08-09 14:50:06:543][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+[2022-08-09 14:50:06:544][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2022-08-09 14:50:06:550][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.CompanyRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:50:06:550][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.DividendRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:50:06:551][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dividendservice.persist.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2022-08-09 14:50:06:551][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[2022-08-09 14:50:06:779][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-09 14:50:06:783][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-09 14:50:06:783][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-09 14:50:06:783][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-08-09 14:50:06:825][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-09 14:50:06:825][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 565 ms
+[2022-08-09 14:50:06:841][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-09 14:50:06:889][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-09 14:50:06:895][main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-08-09 14:50:07:957][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-09 14:50:07:971][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+[2022-08-09 14:50:07:1028][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-08-09 14:50:07:1064][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-09 14:50:07:1280][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-09 14:50:07:1283][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-09 14:50:07:1644][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f391e52, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5857d723, org.springframework.security.web.context.SecurityContextPersistenceFilter@79982bcc, org.springframework.security.web.header.HeaderWriterFilter@1e4b70c6, org.springframework.security.web.authentication.logout.LogoutFilter@24d73c51, zerobase.dividendservice.security.JwtAuthenticationFilter@534d0cfa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79f3f34c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50841932, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b518645, org.springframework.security.web.session.SessionManagementFilter@5507584d, org.springframework.security.web.access.ExceptionTranslationFilter@530e08a7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6efc9d3f]
+[2022-08-09 14:50:07:1649][main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/h2-console/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2022-08-09 14:50:07:1649][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/h2-console/**']
+[2022-08-09 14:50:07:1930][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-09 14:50:07:1944][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-09 14:50:07:1952][main] INFO  z.d.DividendServiceApplication - Started DividendServiceApplication in 1.888 seconds (JVM running for 2.136)
+[2022-08-09 14:58:57:531244][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-09 14:58:57:531245][SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[2022-08-09 14:58:57:531324][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-09 14:58:57:531327][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
